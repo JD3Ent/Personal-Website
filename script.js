@@ -1,22 +1,22 @@
-document.getElementById("themeToggle").addEventListener("click", function() {
-    document.body.classList.toggle("dark-mode");
+document.addEventListener("DOMContentLoaded", function () {
+    const themeToggle = document.getElementById("themeToggle");
+    const body = document.body;
+
+    // Check if a theme is already set in localStorage
+    if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+        themeToggle.innerHTML = "☀️ Light Theme";
+    }
+
+    themeToggle.addEventListener("click", function () {
+        body.classList.toggle("dark-mode");
+
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+            themeToggle.innerHTML = "☀️ Light Theme";
+        } else {
+            localStorage.setItem("theme", "light");
+            themeToggle.innerHTML = "🌙 Dark Theme";
+        }
+    });
 });
-
-/* Dark Mode */
-.dark-mode {
-    background: linear-gradient(135deg, #000000, #222222);
-    color: white;
-}
-
-.dark-mode .card {
-    background: rgba(50, 50, 50, 0.7);
-}
-
-.dark-mode .button {
-    background: silver;
-    color: black;
-}
-
-.dark-mode #themeToggle {
-    background: gray;
-}
