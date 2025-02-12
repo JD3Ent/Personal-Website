@@ -28,11 +28,14 @@ nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 5px 10px;
 }
 
 nav ul li a {
@@ -41,23 +44,27 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Content Cards */
+/* Content Section */
 .content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 800px; /* Keeps content constrained */
+    margin: auto;
 }
 
-/* Fix for Mobile Scaling */
+/* Card Styling */
 .card {
     background: rgba(255, 255, 255, 0.2);
     padding: 20px;
     border-radius: 15px;
-    width: 90%; /* Adjusted for mobile responsiveness */
+    width: 90%; /* Responsive */
     max-width: 400px;
     margin: 20px auto;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out;
+    overflow: hidden; /* Prevents content overflow */
 }
 
 .card:hover {
@@ -71,12 +78,14 @@ h2 {
     font-weight: bold;
 }
 
-/* Images */
+/* Images (Fix for Overflow Issue) */
 .card img {
-    width: 100%;
-    max-width: 300px; /* Keeps images from being too large */
+    width: 100%; /* Makes image responsive */
+    max-width: 100%; /* Ensures it stays within the card */
+    height: auto; /* Keeps aspect ratio */
     border-radius: 10px;
-    margin-bottom: 10px;
+    display: block;
+    object-fit: cover; /* Keeps images from distorting */
 }
 
 /* Buttons */
@@ -115,13 +124,7 @@ h2 {
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     nav ul {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: center;
-    }
-
-    nav ul li {
-        margin: 5px;
     }
 
     .card {
