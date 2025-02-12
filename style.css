@@ -1,88 +1,120 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    background: linear-gradient(135deg, #ff00ff, #00c6ff); /* Neon pink & blue gradient */
+    background: linear-gradient(135deg, #ff1493, #add8e6);
     color: white;
+    transition: all 0.5s ease-in-out;
 }
 
-/* Header */
+/* Header Styling */
 header {
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 20px;
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, rgba(255,20,147,0.8), rgba(173,216,230,0.8));
+    box-shadow: 0px 0px 15px rgba(255, 20, 147, 0.6);
+    backdrop-filter: blur(10px);
+    position: relative;
 }
 
-/* Gold Titles */
-h2 {
+/* Cursive Title */
+.fancy-title {
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
     color: gold;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    animation: glow 2s infinite alternate;
+}
+
+/* Neon Glow Animation */
+@keyframes glow {
+    0% { text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.8); }
+    100% { text-shadow: 4px 4px 20px rgba(255, 215, 0, 1); }
 }
 
 /* Navigation Bar */
-nav ul {
-    list-style: none;
-    padding: 0;
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-nav ul li {
-    display: inline;
-    margin: 10px;
-}
-
-nav ul li a {
+nav a {
     text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
     color: gold;
+    font-size: 1.2rem;
+    margin: 0 15px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Sections */
+nav a:hover {
+    color: white;
+    text-shadow: 0px 0px 5px rgba(255, 215, 0, 1);
+}
+
+/* Section Styling */
 section {
-    margin: 20px auto;
+    margin: 50px auto;
     padding: 20px;
     width: 80%;
-    border-radius: 10px;
     background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
 }
 
-/* Floating Image Animation */
-.floating-image {
-    width: 200px;
+/* Section Titles */
+h2 {
+    font-size: 2rem;
+    color: gold;
+    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.8);
+}
+
+/* Floating Image Effect */
+img {
+    max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    animation: float 3s ease-in-out infinite;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
 }
 
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
+img:hover {
+    transform: scale(1.05);
 }
 
 /* Buttons */
-.btn {
-    display: inline-block;
-    padding: 12px 20px;
-    margin: 10px;
-    background: #ffd700;
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: 0.3s ease;
+button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background: gold;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
-.btn:hover {
-    background: #fff;
-    color: #000;
+button:hover {
+    background: #ffcc00;
+    box-shadow: 0px 0px 20px rgba(255, 215, 0, 1);
+    transform: scale(1.1);
 }
 
 /* Footer */
 footer {
-    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 10px;
-    margin-top: 20px;
+    font-size: 0.9rem;
 }
