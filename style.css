@@ -1,16 +1,23 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: white;
-    color: black;
+    background: linear-gradient(135deg, #ff00ff, #00c6ff); /* Neon pink & blue gradient */
+    color: white;
 }
 
+/* Header */
 header {
-    background: #333;
+    background: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 20px;
 }
 
+/* Gold Titles */
+h2 {
+    color: gold;
+}
+
+/* Navigation Bar */
 nav ul {
     list-style: none;
     padding: 0;
@@ -23,25 +30,28 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #007BFF;
+    color: white;
+    font-weight: bold;
 }
 
+nav ul li a:hover {
+    color: gold;
+}
+
+/* Sections */
 section {
     margin: 20px auto;
     padding: 20px;
     width: 80%;
     border-radius: 10px;
-    background: #f4f4f4;
-}
-
-img {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 /* Floating Image Animation */
 .floating-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
     animation: float 3s ease-in-out infinite;
 }
 
@@ -51,23 +61,28 @@ img {
     100% { transform: translateY(0px); }
 }
 
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px;
+    background: #ffd700;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Footer */
 footer {
-    background: #222;
+    background: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 10px;
     margin-top: 20px;
-}
-
-/* Dark Mode */
-.dark-mode {
-    background-color: #222;
-    color: white;
-}
-
-.dark-mode section {
-    background: #333;
-}
-
-.dark-mode nav ul li a {
-    color: #FF9800;
 }
