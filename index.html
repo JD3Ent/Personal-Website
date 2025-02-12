@@ -4,89 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JD3's Hub</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header Section -->
     <header>
-        <h1 class="fancy-title">Welcome to <span>JD3's Hub</span></h1>
-        <button onclick="toggleTheme()">🌙 Toggle Theme</button>
+        <h1 class="fancy-title">Welcome to JD3's Hub</h1>
+        <button id="theme-toggle">🌙 Toggle Theme</button>
     </header>
 
-    <!-- Navigation Bar -->
+    <!-- Navigation -->
     <nav>
-        <a href="#about">About</a>
-        <a href="#youtube">YouTube</a>
-        <a href="#bandlab">BandLab</a>
-        <a href="#book">Book</a>
-        <a href="#discord">Discord</a>
-        <a href="#tech">Tech Links</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#youtube">YouTube</a></li>
+            <li><a href="#bandlab">BandLab</a></li>
+            <li><a href="#book">Book</a></li>
+            <li><a href="#discord">Discord</a></li>
+            <li><a href="#tech">Tech Links</a></li>
+        </ul>
     </nav>
 
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <img src="profile.jpg" alt="Profile Picture" class="floating-img">
+        <img src="assets/profile.jpg" alt="Profile Picture" class="floating-img">
         <p>Hello! I'm JD3, a content creator, musician, and tech enthusiast. I make cool stuff and share it with the world!</p>
     </section>
 
     <!-- YouTube Section -->
     <section id="youtube">
         <h2>My YouTube Channel</h2>
-        <img src="youtube.jpg" alt="YouTube Thumbnail" class="floating-img">
+        <img src="assets/youtube.jpg" alt="YouTube Thumbnail" class="floating-img">
         <p>Check out my latest content on YouTube!</p>
-        <a href="https://www.youtube.com/channel/YOUR_CHANNEL" target="_blank">
-            <button class="styled-btn">Visit My YouTube</button>
-        </a>
+        <a href="https://www.youtube.com/channel/YOUR_CHANNEL" target="_blank" class="btn">Visit My YouTube</a>
     </section>
 
     <!-- BandLab Section -->
     <section id="bandlab">
         <h2>My Music (BandLab)</h2>
-        <img src="album-cover.jpg" alt="Album Cover" class="floating-img">
+        <img src="assets/album-cover.jpg" alt="Album Cover" class="floating-img">
         <p>Check out my latest tracks on BandLab!</p>
-        <a href="https://www.bandlab.com/YOUR_PROFILE" target="_blank">
-            <button class="styled-btn">Listen on BandLab</button>
-        </a>
+        <a href="https://www.bandlab.com/YOUR_ACCOUNT" target="_blank" class="btn">Listen on BandLab</a>
     </section>
 
     <!-- Book Section -->
     <section id="book">
         <h2>My Book</h2>
-        <img src="book-cover.jpg" alt="Book Cover" class="floating-img">
-        <p>Explore my book! Read the blurb and check out a free preview.</p>
-        <a href="https://www.yourbooklink.com" target="_blank">
-            <button class="styled-btn">Read My Book</button>
-        </a>
+        <img src="assets/book.jpg" alt="Book Cover" class="floating-img">
+        <p>Read my latest book and explore my stories!</p>
+        <a href="https://yourbooklink.com" target="_blank" class="btn">Read Now</a>
     </section>
 
     <!-- Discord Section -->
     <section id="discord">
         <h2>Join My Discord</h2>
-        <p>Be part of the community and chat with me and other fans.</p>
-        <a href="https://discord.gg/YOUR_INVITE" target="_blank">
-            <button class="styled-btn">Join My Discord</button>
-        </a>
+        <p>Be part of my community on Discord!</p>
+        <a href="https://discord.gg/YOUR_INVITE" target="_blank" class="btn">Join My Discord</a>
     </section>
 
     <!-- Tech Links Section -->
     <section id="tech">
-        <h2>My Tech Links</h2>
-        <p>Follow me on various platforms:</p>
-        <div class="links">
-            <a href="https://github.com/YOUR_GITHUB" target="_blank">GitHub</a>
-            <a href="https://www.huggingface.co/YOUR_PROFILE" target="_blank">Hugging Face</a>
-            <a href="https://www.replit.com/@YOUR_USERNAME" target="_blank">Replit</a>
-            <a href="https://www.linkedin.com/in/YOUR_PROFILE" target="_blank">LinkedIn</a>
-        </div>
+        <h2>Tech Links</h2>
+        <p>Follow my tech projects and social pages:</p>
+        <ul>
+            <li><a href="https://github.com/YOUR_GITHUB" target="_blank">GitHub</a></li>
+            <li><a href="https://huggingface.co/YOUR_PROFILE" target="_blank">Hugging Face</a></li>
+            <li><a href="https://replit.com/@YOUR_USERNAME" target="_blank">Replit</a></li>
+            <li><a href="https://www.linkedin.com/in/YOUR_PROFILE" target="_blank">LinkedIn</a></li>
+        </ul>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2024 JD3. All rights reserved.</p>
-    </footer>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
