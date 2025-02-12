@@ -8,12 +8,22 @@ body {
     padding: 0;
 }
 
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Header */
 header {
     background: linear-gradient(135deg, #44004e, #8e44ad);
     padding: 20px;
     border-radius: 15px;
     margin: 20px;
+}
+
+/* Fix for Fixed Header Overlapping Sections */
+section {
+    scroll-margin-top: 80px; /* Adjust based on header height */
 }
 
 header h1 {
