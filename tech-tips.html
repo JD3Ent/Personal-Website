@@ -1,92 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JD’s Tech Tips</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="pcparts.js"></script>
-</head>
-<body>
+<!-- PC Builder Dropdowns -->
+<section class="content">
+    <div class="card">
+        <h2>Build Your Custom PC</h2>
+        <p>Select your components and submit your build for review.</p>
 
-    <header>
-        <h1>JD’s Tech Tips</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                
-            </ul>
-        </nav>
-    </header>
+        <form action="https://formsubmit.co/jjd32004@gmail.com" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
 
-    <!-- Hero Banner with PC Image -->
-    <section class="hero">
-        <img src="assets/pc.jpg" alt="JD’s PC Setup">
-        <div class="hero-text">
-            <h2>Building a PC? Need Tech Advice?</h2>
-            <p>Use the PC builder, submit your build for review, or ask tech questions!</p>
-        </div>
-    </section>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
 
-    <!-- PC Builder Dropdowns -->
-    <section class="content">
-        <div class="card">
-            <h2>Build Your Custom PC</h2>
-            <p>Select your components and submit your build for review.</p>
+            <label for="budget">Budget ($):</label>
+            <input type="text" id="budget" name="budget" placeholder="Enter your budget" required>
 
-            <form action="https://formsubmit.co/jjd32004@gmail.com" method="POST">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
+            <label for="usage">Intended Use:</label>
+            <textarea id="usage" name="usage" rows="3" placeholder="What do you plan to use this PC for?" required></textarea>
 
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
+            <label for="cpu">CPU:</label>
+            <select id="cpu" name="cpu"></select>
 
-                <label for="cpu">CPU:</label>
-                <select id="cpu" name="cpu"></select>
+            <label for="gpu">GPU:</label>
+            <select id="gpu" name="gpu"></select>
 
-                <label for="gpu">GPU:</label>
-                <select id="gpu" name="gpu"></select>
+            <label for="ram">RAM:</label>
+            <select id="ram" name="ram"></select>
 
-                <label for="ram">RAM:</label>
-                <select id="ram" name="ram"></select>
+            <label for="storage">Storage:</label>
+            <select id="storage" name="storage"></select>
 
-                <label for="storage">Storage:</label>
-                <select id="storage" name="storage"></select>
+            <label for="motherboard">Motherboard:</label>
+            <select id="motherboard" name="motherboard"></select>
 
-                <label for="motherboard">Motherboard:</label>
-                <select id="motherboard" name="motherboard"></select>
+            <label for="psu">Power Supply (PSU):</label>
+            <select id="psu" name="psu"></select>
 
-                <label for="psu">Power Supply (PSU):</label>
-                <select id="psu" name="psu"></select>
+            <label for="case">PC Case:</label>
+            <select id="case" name="case"></select>
 
-                <label for="case">PC Case:</label>
-                <select id="case" name="case"></select>
-
-                <button type="submit">📩 Submit for Review</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Tech Q&A Section -->
-    <section class="content">
-        <div class="card">
-            <h2>Ask a Tech Question</h2>
-            <p>Need troubleshooting help or advice? Submit your question below!</p>
-
-            <form action="https://formsubmit.co/jjd32004@gmail.com" method="POST">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Best Contact Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="question">Your Tech Question:</label>
-                <textarea id="question" name="question" rows="4" required></textarea>
-
-                <button type="submit" class="button">📩 Send Question</button>
-            </form>
-        </div>
-    </section>
-
-</body>
-</html>
+            <button type="submit">📩 Submit for Review</button>
+        </form>
+    </div>
+</section>
