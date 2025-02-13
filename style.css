@@ -19,8 +19,8 @@ html {
 
 /* Dark Mode */
 .dark-mode {
-    background: linear-gradient(135deg, #000000, #444444); /* Black to Grey Gradient */
-    color: gold; /* Keeps Gold Text */
+    background: linear-gradient(135deg, #000000, #444444);
+    color: gold;
 }
 
 /* Header */
@@ -33,31 +33,31 @@ header {
 
 /* Dark Mode Header */
 .dark-mode header {
-    background: linear-gradient(135deg, #222, #555); /* Dark Grey Gradient */
+    background: linear-gradient(135deg, #222, #555);
 }
 
 /* Header Title Styling */
 header h1 {
     font-size: 2.5em;
-    font-family: 'Dancing Script', cursive; /* Apply Cursive Font */
+    font-family: 'Dancing Script', cursive;
     font-weight: bold;
-    background: linear-gradient(135deg, #ffd700, #ffcc00, #ffaa00); /* Gold Gradient */
+    background: linear-gradient(135deg, #ffd700, #ffcc00, #ffaa00);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Makes Gradient Apply to Text */
+    -webkit-text-fill-color: transparent;
     display: inline-block;
     padding: 10px;
 }
 
 /* Dark Mode Header Title */
 .dark-mode header h1 {
-    background: linear-gradient(135deg, #ffcc00, #ffaa00, #ff8800); /* Slightly Warmer Gold in Dark Mode */
+    background: linear-gradient(135deg, #ffcc00, #ffaa00, #ff8800);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 /* Fix for Fixed Header Overlapping Sections */
 section {
-    scroll-margin-top: 80px; /* Adjust based on header height */
+    scroll-margin-top: 80px;
 }
 
 /* Navigation */
@@ -83,7 +83,7 @@ nav ul li a {
 
 /* Dark Mode Navigation */
 .dark-mode nav ul li a {
-    color: #ff79c6; /* Soft Pink Links */
+    color: #ff79c6;
 }
 
 /* Content Section */
@@ -92,7 +92,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 800px; /* Keeps content constrained */
+    max-width: 800px;
     margin: auto;
 }
 
@@ -101,12 +101,12 @@ nav ul li a {
     background: rgba(255, 255, 255, 0.2);
     padding: 20px;
     border-radius: 15px;
-    width: 90%; /* Responsive */
+    width: 90%;
     max-width: 400px;
     margin: 20px auto;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
-    overflow: hidden; /* Prevents content overflow */
+    overflow: hidden;
 }
 
 .card:hover {
@@ -128,17 +128,17 @@ h2 {
 
 /* Dark Mode Titles */
 .dark-mode h2 {
-    color: #00bfff; /* Neon Blue */
+    color: #00bfff;
 }
 
 /* Images (Fix for Overflow Issue) */
 .card img {
-    width: 100%; /* Makes image responsive */
-    max-width: 100%; /* Ensures it stays within the card */
-    height: auto; /* Keeps aspect ratio */
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
     display: block;
-    object-fit: cover; /* Keeps images from distorting */
+    object-fit: cover;
 }
 
 /* Buttons */
@@ -156,7 +156,7 @@ h2 {
 
 /* Dark Mode Buttons */
 .dark-mode .button {
-    background: #ff79c6; /* Pink Accent */
+    background: #ff79c6;
     color: black;
 }
 
@@ -201,11 +201,12 @@ h2 {
     position: relative;
     text-align: center;
     color: white;
+    overflow: hidden;
 }
 
 .hero img {
     width: 100%;
-    max-height: 400px;
+    max-height: 250px; /* Fixed image size */
     object-fit: cover;
     filter: brightness(70%);
 }
@@ -216,31 +217,36 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
 }
 
 .hero-text h2 {
-    font-size: 2em;
+    font-size: 1.8em;
     color: gold;
 }
 
 .hero-text p {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 /* Tech Tips Page - Forms */
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     max-width: 500px;
-    margin: 10px auto;
+    margin: 15px auto;
 }
 
 label {
     font-weight: bold;
     margin-top: 10px;
+    text-align: left;
+    width: 100%;
 }
 
 input, textarea {
@@ -252,13 +258,17 @@ input, textarea {
     font-size: 1em;
 }
 
-textarea {
-    resize: vertical;
+/* Align Text Inputs Properly */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-/* Tech Tips Page - Button Styles */
-.tech-tips-container button {
-    margin-top: 15px;
+/* Fix Button Alignment */
+button {
+    margin-top: 10px;
+    width: 100%;
     background: gold;
     color: black;
     padding: 12px 24px;
@@ -268,9 +278,13 @@ textarea {
     border-radius: 5px;
     transition: background 0.3s ease-in-out;
     border: 2px solid black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.tech-tips-container button:hover {
+button:hover {
     background: #ffd700;
 }
 
@@ -299,5 +313,10 @@ textarea {
 
     .hero-text p {
         font-size: 1em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 10px 20px;
     }
 }
