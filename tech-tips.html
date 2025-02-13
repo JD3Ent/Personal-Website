@@ -28,12 +28,20 @@
         </div>
     </section>
 
-    <!-- Embedded PC Builder -->
+    <!-- Redux PC Builder Tool -->
     <section class="content">
         <div class="card">
-            <h2>PCPartPicker Builder</h2>
-            <p>Use the PCPartPicker tool below to build your PC and check compatibility.</p>
-            <iframe src="https://pcpartpicker.com/list/" width="100%" height="600px"></iframe>
+            <h2>Redux PC Builder Tool</h2>
+            <p>Use the Redux PC Builder to create your custom PC with real-time pricing and compatibility checks.</p>
+
+            <!-- Embedded Redux PC Builder -->
+            <iframe src="https://buildredux.com/configurator/" width="100%" height="600px" style="border: none;"></iframe>
+
+            <!-- Pop Out Button -->
+            <br>
+            <a href="https://buildredux.com/configurator/" target="_blank" class="button">
+                🖥️ Open Full PC Builder
+            </a>
         </div>
     </section>
 
@@ -41,7 +49,7 @@
     <section class="content">
         <div class="card">
             <h2>Submit Your PC Build</h2>
-            <p>Paste your PCPartPicker build URL below, and I’ll review it for compatibility.</p>
+            <p>Paste your Build Redux configuration link below, and I’ll review it for compatibility.</p>
 
             <form action="https://formsubmit.co/jjd32004@gmail.com" method="POST">
                 <label for="name">Your Name:</label>
@@ -50,10 +58,10 @@
                 <label for="email">Best Contact Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="pc-build">PCPartPicker Build Link:</label>
-                <input type="url" id="pc-build" name="pc-build" required>
+                <label for="pc-build">Build Redux Link:</label>
+                <input type="url" id="pc-build" name="pc-build" placeholder="Paste your build link here..." required>
 
-                <button type="submit" class="button">💻 Submit Build</button>
+                <button type="submit" class="button">📩 Submit for Review</button>
             </form>
         </div>
     </section>
