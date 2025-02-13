@@ -52,7 +52,11 @@ const pcParts = {
 "Core i7-9700K"
     ],
     gpu: [
-        "RTX 4090",
+  "RTX 5090",
+"RTX 5080",
+"RTX 5070 Ti",
+"RTX 5070"     
+ "RTX 4090",
 "RTX 4080 SUPER",
 "RTX 4080",
 "RTX 4070 Ti SUPER",
