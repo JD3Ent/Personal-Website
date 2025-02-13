@@ -133,7 +133,7 @@ nav ul li a {
     padding: 20px;
     border-radius: 15px;
     width: 90%;
-    max-width: 500px; /* Slightly wider for better alignment */
+    max-width: 500px;
     margin: 20px auto;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
@@ -172,7 +172,47 @@ h2 {
     object-fit: cover;
 }
 
-/* PC Builder Section */
+/* Buttons */
+button, .button {
+    background: gold;
+    color: black;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 300px;
+    margin: 15px auto;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    border: 2px solid black;
+}
+
+/* Dark Mode Buttons */
+.dark-mode .button, .dark-mode button {
+    background: #ff79c6;
+    color: black;
+}
+
+.button:hover, button:hover {
+    background: #ffd700;
+    transform: scale(1.05);
+}
+
+/* Dark Mode Button Hover */
+.dark-mode .button:hover, .dark-mode button:hover {
+    background: #ff55aa;
+}
+
+/* Ensure Dark Mode Works on All Pages */
+.dark-mode body, .dark-mode .content, .dark-mode .card, .dark-mode nav ul li a {
+    background: linear-gradient(135deg, #000000, #444444);
+    color: gold;
+}
+
+/* Fix PC Builder Section */
 #pc-builder {
     background: linear-gradient(135deg, #ff007f, #00d4ff);
     color: white;
@@ -211,50 +251,6 @@ select, input, textarea {
     border-radius: 5px;
     border: 1px solid #ddd;
     font-size: 1em;
-}
-
-/* Fix Button Alignment */
-button, .button {
-    margin-top: 10px;
-    width: 100%;
-    background: gold;
-    color: black;
-    padding: 12px 24px;
-    font-size: 1.2em;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background 0.3s ease-in-out;
-    border: 2px solid black;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Button Hover Effect */
-button:hover, .button:hover {
-    background: #ffd700;
-}
-
-/* Dark Mode Buttons */
-.dark-mode .button {
-    background: #ff79c6;
-    color: black;
-}
-
-.dark-mode button {
-    background: #ff79c6;
-}
-
-.dark-mode button:hover, .dark-mode .button:hover {
-    background: #ff55aa;
-}
-
-/* Ensure Dark Mode Works on All Pages */
-.dark-mode body, .dark-mode .content, .dark-mode .card, .dark-mode nav ul li a {
-    background: linear-gradient(135deg, #000000, #444444);
-    color: gold;
 }
 
 /* Responsive Design */
