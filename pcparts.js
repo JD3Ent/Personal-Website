@@ -102,6 +102,11 @@ const pcParts = {
 "RX 6600 XT",
 "RX 6600",
 "RX 6500 XT"
+"Arc A770 16GB",
+"Arc A770 8GB",
+"Arc A750 8GB",
+"Arc A580 8GB",
+"Arc A380 6GB",
     ],
     ram: [
         "G.Skill Trident Z5 RGB 64GB (2x32GB) DDR5-7200 CL34",
