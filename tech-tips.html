@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD’s Tech Tips</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>JD’s Tech Tips</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tech-tips.html">Tech Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Banner with PC Image -->
+    <section class="hero">
+        <img src="assets/pc.jpg" alt="JD’s PC Setup">
+        <div class="hero-text">
+            <h2>Building a PC? Need Tech Advice?</h2>
+            <p>Use the PC builder, submit your build for review, or ask tech questions!</p>
+        </div>
+    </section>
+
+    <!-- Embedded PC Builder -->
+    <section class="content">
+        <div class="card">
+            <h2>PCPartPicker Builder</h2>
+            <p>Use the PCPartPicker tool below to build your PC and check compatibility.</p>
+            <iframe src="https://pcpartpicker.com/builds/" width="100%" height="600px"></iframe>
+        </div>
+    </section>
+
+    <!-- PC Build Submission Form -->
+    <section class="content">
+        <div class="card">
+            <h2>Submit Your PC Build</h2>
+            <p>Paste your PCPartPicker build URL below, and I’ll review it for compatibility.</p>
+
+            <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Best Contact Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="pc-build">PCPartPicker Build Link:</label>
+                <input type="url" id="pc-build" name="pc-build" required>
+
+                <button type="submit" class="button">💻 Submit Build</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Tech Q&A Section -->
+    <section class="content">
+        <div class="card">
+            <h2>Ask a Tech Question</h2>
+            <p>Need troubleshooting help or advice? Submit your question below!</p>
+
+            <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Best Contact Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="question">Your Tech Question:</label>
+                <textarea id="question" name="question" rows="4" required></textarea>
+
+                <button type="submit" class="button">📩 Send Question</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
