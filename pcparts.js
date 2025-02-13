@@ -1,5 +1,4 @@
 const pcParts = {
-    const pcParts = {
     cpu: [
         "Ryzen 9 7950X3D", "Ryzen 9 7950X", "Ryzen 9 7900X3D", "Ryzen 9 7900X",
         "Ryzen 9 7900", "Ryzen 7 7800X3D", "Ryzen 7 7700X", "Ryzen 7 7700",
