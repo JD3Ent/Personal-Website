@@ -372,19 +372,26 @@ const pcParts = {
     ]
 };
 
-// Function to populate dropdowns
 function populateDropdowns() {
-    Object.keys(pcParts).forEach(partType => {
-        const selectElement = document.getElementById(partType);
-        if (selectElement) {
-            pcParts[partType].forEach(part => {
-                let option = document.createElement("option");
-                option.value = part;
-                option.textContent = part;
-                selectElement.appendChild(option);
-            });
-        }
+    Object.keys(pcParts).forEach((partType, index) => {
+        setTimeout(() => { // ✅ Prevents page freezing by spacing out execution
+            const selectElement = document.getElementById(partType);
+            if (selectElement) {
+                selectElement.innerHTML = ""; // ✅ Clears old options
+
+                pcParts[partType].forEach(part => {
+                    let option = document.createElement("option");
+                    option.value = part;
+                    option.textContent = part;
+                    selectElement.appendChild(option);
+                });
+            }
+        }, index * 50); // ✅ Adds a small delay between each dropdown update
     });
+}
+
+// ✅ Ensures dropdowns are populated when the page loads
+document.addEventListener("DOMContentLoaded", populateDropdowns);
 }
 
 document.addEventListener("DOMContentLoaded", populateDropdowns);
