@@ -214,7 +214,7 @@ select, input, textarea {
 }
 
 /* Fix Button Alignment */
-button {
+button, .button {
     margin-top: 10px;
     width: 100%;
     background: gold;
@@ -233,7 +233,7 @@ button {
 }
 
 /* Button Hover Effect */
-button:hover {
+button:hover, .button:hover {
     background: #ffd700;
 }
 
@@ -247,8 +247,14 @@ button:hover {
     background: #ff79c6;
 }
 
-.dark-mode button:hover {
+.dark-mode button:hover, .dark-mode .button:hover {
     background: #ff55aa;
+}
+
+/* Ensure Dark Mode Works on All Pages */
+.dark-mode body, .dark-mode .content, .dark-mode .card, .dark-mode nav ul li a {
+    background: linear-gradient(135deg, #000000, #444444);
+    color: gold;
 }
 
 /* Responsive Design */
