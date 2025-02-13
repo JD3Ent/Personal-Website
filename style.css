@@ -133,7 +133,7 @@ nav ul li a {
     padding: 20px;
     border-radius: 15px;
     width: 90%;
-    max-width: 400px;
+    max-width: 500px; /* Slightly wider for better alignment */
     margin: 20px auto;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
@@ -172,8 +172,8 @@ h2 {
     object-fit: cover;
 }
 
-/* Redux PC Builder Section */
-#redux-pc-builder {
+/* PC Builder Section */
+#pc-builder {
     background: linear-gradient(135deg, #ff007f, #00d4ff);
     color: white;
     padding: 20px;
@@ -195,6 +195,7 @@ form {
     margin: 15px auto;
 }
 
+/* Labels */
 label {
     font-weight: bold;
     margin-top: 10px;
@@ -202,14 +203,8 @@ label {
     width: 100%;
 }
 
-/* Align Text Inputs Properly */
-.input-group {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-input, textarea {
+/* Dropdowns and Inputs */
+select, input, textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -237,6 +232,7 @@ button {
     justify-content: center;
 }
 
+/* Button Hover Effect */
 button:hover {
     background: #ffd700;
 }
