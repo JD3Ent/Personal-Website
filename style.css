@@ -55,11 +55,6 @@ header h1 {
     -webkit-text-fill-color: transparent;
 }
 
-/* Fix for Fixed Header Overlapping Sections */
-section {
-    scroll-margin-top: 80px;
-}
-
 /* Navigation */
 nav ul {
     list-style: none;
@@ -84,6 +79,42 @@ nav ul li a {
 /* Dark Mode Navigation */
 .dark-mode nav ul li a {
     color: #ff79c6;
+}
+
+/* Hero Banner */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.hero-text h2 {
+    font-size: 1.8em;
+    color: gold;
+}
+
+.hero-text p {
+    font-size: 1.1em;
 }
 
 /* Content Section */
@@ -131,7 +162,7 @@ h2 {
     color: #00bfff;
 }
 
-/* Images (Fix for Overflow Issue) */
+/* Images */
 .card img {
     width: 100%;
     max-width: 100%;
@@ -141,98 +172,20 @@ h2 {
     object-fit: cover;
 }
 
-/* Buttons */
-.button {
-    background: gold;
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 10px;
-    border-radius: 5px;
-    transition: background 0.3s ease-in-out;
-}
-
-/* Dark Mode Buttons */
-.dark-mode .button {
-    background: #ff79c6;
-    color: black;
-}
-
-.button:hover {
-    background: #ffd700;
-}
-
-/* Dark Mode Button Hover */
-.dark-mode .button:hover {
-    background: #ff55aa;
-}
-
-/* Theme Toggle */
-#themeToggle {
-    background: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s ease-in-out;
-}
-
-/* Dark Mode Theme Toggle */
-.dark-mode #themeToggle {
-    background: #ff79c6;
-    color: black;
-}
-
-#themeToggle:hover {
-    background: lightgray;
-}
-
-/* Dark Mode Toggle Hover */
-.dark-mode #themeToggle:hover {
-    background: #ff55aa;
-}
-
-/* Tech Tips Page - Hero Banner */
-.hero {
-    position: relative;
-    text-align: center;
+/* Redux PC Builder Section */
+#redux-pc-builder {
+    background: linear-gradient(135deg, #ff007f, #00d4ff);
     color: white;
-    overflow: hidden;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
-.hero img {
-    width: 100%;
-    max-height: 250px; /* Fixed image size */
-    object-fit: cover;
-    filter: brightness(70%);
-}
-
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.6);
-    padding: 15px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 600px;
-}
-
-.hero-text h2 {
-    font-size: 1.8em;
-    color: gold;
-}
-
-.hero-text p {
-    font-size: 1.1em;
-}
-
-/* Tech Tips Page - Forms */
+/* Form Styling */
 form {
     display: flex;
     flex-direction: column;
@@ -249,6 +202,13 @@ label {
     width: 100%;
 }
 
+/* Align Text Inputs Properly */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 input, textarea {
     width: 100%;
     padding: 10px;
@@ -256,13 +216,6 @@ input, textarea {
     border-radius: 5px;
     border: 1px solid #ddd;
     font-size: 1em;
-}
-
-/* Align Text Inputs Properly */
-.input-group {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
 }
 
 /* Fix Button Alignment */
@@ -286,6 +239,20 @@ button {
 
 button:hover {
     background: #ffd700;
+}
+
+/* Dark Mode Buttons */
+.dark-mode .button {
+    background: #ff79c6;
+    color: black;
+}
+
+.dark-mode button {
+    background: #ff79c6;
+}
+
+.dark-mode button:hover {
+    background: #ff55aa;
 }
 
 /* Responsive Design */
