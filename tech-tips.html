@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JD’s Tech Tips</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <script defer src="pcparts.js"></script>
 </head>
 <body>
 
@@ -28,40 +28,41 @@
         </div>
     </section>
 
-    <!-- Redux PC Builder Tool -->
+    <!-- PC Builder Dropdowns -->
     <section class="content">
         <div class="card">
-            <h2>Redux PC Builder Tool</h2>
-            <p>Use the Redux PC Builder to create your custom PC with real-time pricing and compatibility checks.</p>
-
-            <!-- Embedded Redux PC Builder -->
-            <iframe src="https://pc-builder.io/" width="100%" height="600px" style="border: none;"></iframe>
-
-            <!-- Pop Out Button -->
-            <br>
-            <a href="https://buildredux.com/configurator/" target="_blank" class="button">
-                🖥️ Open Full PC Builder
-            </a>
-        </div>
-    </section>
-
-    <!-- PC Build Submission Form -->
-    <section class="content">
-        <div class="card">
-            <h2>Submit Your PC Build</h2>
-            <p>Paste your Build Redux configuration link below, and I’ll review it for compatibility.</p>
+            <h2>Build Your Custom PC</h2>
+            <p>Select your components and submit your build for review.</p>
 
             <form action="https://formsubmit.co/jjd32004@gmail.com" method="POST">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
 
-                <label for="email">Best Contact Email:</label>
+                <label for="email">Your Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="pc-build">Build Redux Link:</label>
-                <input type="url" id="pc-build" name="pc-build" placeholder="Paste your build link here..." required>
+                <label for="cpu">CPU:</label>
+                <select id="cpu" name="cpu"></select>
 
-                <button type="submit" class="button">📩 Submit for Review</button>
+                <label for="gpu">GPU:</label>
+                <select id="gpu" name="gpu"></select>
+
+                <label for="ram">RAM:</label>
+                <select id="ram" name="ram"></select>
+
+                <label for="storage">Storage:</label>
+                <select id="storage" name="storage"></select>
+
+                <label for="motherboard">Motherboard:</label>
+                <select id="motherboard" name="motherboard"></select>
+
+                <label for="psu">Power Supply (PSU):</label>
+                <select id="psu" name="psu"></select>
+
+                <label for="case">PC Case:</label>
+                <select id="case" name="case"></select>
+
+                <button type="submit">📩 Submit for Review</button>
             </form>
         </div>
     </section>
